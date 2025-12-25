@@ -74,5 +74,17 @@
         <p>&copy; 2025 TRYGGHETS-POSTEN. En oberoende nyhetskälla.</p>
         <p><a href="index.html">Nyheter</a></p>
     </footer>
+
+    <!-- Scroll behavior script -->
+    <script>
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            if (window.scrollY > 80) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>
